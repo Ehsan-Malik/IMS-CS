@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+ function idForm(){
+   var selectvalue = $('input[name=choice]:checked', '#idForm').val();
+
+
+if(selectvalue == "hod"){
+  window.open('http://localhost/IMS/registeration/hodregister.php/','_self');
+return true;
+}
+else if(selectvalue == "teacher"){
+window.open('http://localhost/IMS/registeration/teacherregister.php/','_self');
+return true;
+}else if(selectvalue == 'student'){
+window.open('http://localhost/IMS/registeration/studentregister.php/','_self');
+return true;
+}else if(selectvalue == 'itservices'){
+window.open('http://localhost/IMS/registeration/itregister.php/','_self');
+return true;
+}
+return false;
+};
+</script>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Social Media Icons-->
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/vaakash/socializer/80391a50/css/socializer.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Role</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="Images/logo.png">
+   <style>
+        .container{
+            display: flex;
+            align-items: center;
+            align-self: center;
+            text-align: center;
+    	background-color: #ffffff78
+
+
+        }
+        #idForm{
+            text-align: center;
+            margin: auto;
+            padding: 100px;
+	margin-top: 500px;
+        }
+
+        #navigation{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+}
+
+#search-btn{
+    color: aliceblue;
+    border-color: aliceblue;
+
+}
+#contact{
+    color: aliceblue;
+}
+#about{
+    color: aliceblue;
+}
+#signin{
+    color: aliceblue;
+}
+      
+#radio1{
+float: left;
+}
+#radio2{
+float: left;
+}
+#radio3{
+float: left;
+}
+#radio4{
+float: left;
+}
+#submit{
+float: left;
+}
+ /* Footer*/
+
+  .footer-distributed{
+    background-color: #5239aa;;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+  
+    padding: 55px 50px;
+   
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+    width: 40%;
+  }
+  
+
+  
+  .footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+  }
+  
+  .footer-distributed h3 span{
+    color:  #5383d3;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+  }
+  
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+ 
+  
+  @media (max-width: 880px) {
+  
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+  
+  }
+
+*td{
+float:left;
+}
+
+  /*End of  footer*/
+
+    </style>
+</head>
+
+<body>
+
+<nav id="navigation" class="navbar navbar-expand-lg navbar-dark" style="background-color: #5239aa; ">
+        <div class="container-fluid">
+            <img src="Images/logo.png" alt="" id="logo">
+            <a class="navbar-brand" href="http://localhost/IMS/">IMS CS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://localhost/IMS/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/IMS/pages/contact.php" id="contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="http://localhost/IMS/pages/about.html" id="about">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="http://localhost/IMS/login/" id="signin">
+                            Sign In
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+  <h1>Who You Are?</h1> <br /><br />
+<form id="idForm"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" onclick="idForm()"  name="choice" value="hod"/><b>I am Hod / Admin </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio"  onclick="idForm()" name="choice" value="teacher"/><b>I am Teacher </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio"  onclick="idForm()" name="choice" value="student"/><b>I am Student </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio"  onclick="idForm()" name="choice" value="itservices"/><b>I am IT Services Staff </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</form>
+    </div>
+  <!--Footer -->
+
+<!-- The content of your page would go here. -->
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <h3><img src="Images/logo.png" alt="" style="width: 50px; height: 50px;"></h3>
+
+        <p class="footer-links">
+            <a href="http://localhost/IMS/">Home</a>
+            ·
+            <a href="http://localhost/IMS/">Blog</a>
+            ·
+            <a href="http://localhost/IMS/pages/about.html">About</a>
+            ·
+            <a href="http://localhost/IMS/pages/contact.php">Contact</a>
+        </p>
+        <p class="footer-company-name">Copyright &copy; 2020</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Capt Akash Rabani Shaheed Road </span> Havelian, KPK</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+92 555 123456</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p>imscs@aust.edu.pk</p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>About AUST</span>
+            Abbottabad (abt-ah-baad) is the headquarters and biggest town of Hazara division in the
+            province of Khyber
+            Pakhtunkhwa.
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="https://web.facebook.com/aust.edu.pk/?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a>
+            <a href="https://web.facebook.com/aust.edu.pk/?_rdc=1&_rdr"><i class="fa fa-twitter"></i></a>
+            <a href="https://web.facebook.com/aust.edu.pk/?_rdc=1&_rdr"><i class="fa fa-linkedin"></i></a>
+            <a href="https://web.facebook.com/aust.edu.pk/?_rdc=1&_rdr"><i class="fa fa-instagram"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+</body>
+</html>

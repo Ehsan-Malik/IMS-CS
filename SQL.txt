@@ -1,0 +1,187 @@
+
+CREAT DATABASE IMS;
+
+USE IMS;
+CREATE TABLE `contactus` (
+ `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+ `message` text COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+
+
+CREATE TABLE `examrecord` (
+ `rollno` varchar(100) NOT NULL,
+ `session` varchar(100) NOT NULL,
+ `teacher_remarks` varchar(100) NOT NULL,
+ `student_feedback` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+CREATE TABLE `feerecord` (
+ `rollno` int(11) NOT NULL,
+ `totalfee` varchar(100) NOT NULL,
+ `submitted` varchar(100) NOT NULL,
+ `depositor` varchar(100) NOT NULL,
+ `ddf` varchar(100) NOT NULL,
+ `submission_date` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+
+CREATE TABLE `hod` (
+ `scardno` varchar(100) NOT NULL,
+ `fname` varchar(100) NOT NULL,
+ `lname` varchar(100) NOT NULL,
+ `usn` varchar(100) NOT NULL,
+ `password` varchar(100) NOT NULL,
+ `phone` varchar(100) NOT NULL,
+ `cnic` varchar(100) NOT NULL,
+ PRIMARY KEY (`scardno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+
+CREATE TABLE `itservice` (
+ `scardno` varchar(100) NOT NULL,
+ `fname` varchar(100) NOT NULL,
+ `lname` varchar(100) NOT NULL,
+ `usn` varchar(100) NOT NULL,
+ `password` varchar(100) NOT NULL,
+ `email` varchar(100) NOT NULL,
+ `cnic` varchar(100) NOT NULL,
+ `category` varchar(100) NOT NULL,
+ `phone` varchar(100) NOT NULL,
+ PRIMARY KEY (`scardno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+
+CREATE TABLE `marks` (
+ `rollno` varchar(100) NOT NULL,
+ `tmarks` varchar(100) NOT NULL,
+ `omarks` varchar(100) NOT NULL,
+ `percentage` varchar(100) NOT NULL,
+ `status` varchar(100) NOT NULL,
+ `gpa` varchar(100) NOT NULL,
+ `cgpa` varchar(100) NOT NULL,
+ PRIMARY KEY (`rollno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+CREATE TABLE `notification` (
+ `id` varchar(100) NOT NULL,
+ `not_type` varchar(100) NOT NULL,
+ `not_detail` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+CREATE TABLE `registration` (
+ `id` int(255) NOT NULL AUTO_INCREMENT,
+ `fname` varchar(255) NOT NULL,
+ `lname` varchar(255) NOT NULL,
+ `bdate` date NOT NULL,
+ `usn` varchar(100) NOT NULL,
+ `email` varchar(255) NOT NULL,
+ `roll` varchar(25) NOT NULL,
+ `cnic` varchar(25) NOT NULL,
+ `scard` varchar(25) NOT NULL,
+ `gender` char(1) NOT NULL,
+ `phno` bigint(11) NOT NULL,
+ `image` varchar(100) NOT NULL,
+ `password` varchar(255) NOT NULL,
+ `category` varchar(255) NOT NULL,
+ `discipline` varchar(255) NOT NULL,
+ `sem` varchar(25) NOT NULL,
+ `question` varchar(255) NOT NULL,
+ `answer` varchar(255) NOT NULL,
+ `role` varchar(25) NOT NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `usn` (`usn`)
+) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8mb4
+
+
+CREATE TABLE `salaryrecord` (
+ `scardno` varchar(100) NOT NULL,
+ `category` varchar(100) NOT NULL,
+ `role` varchar(100) NOT NULL,
+ `receivername` varchar(100) NOT NULL,
+ `amount_received` varchar(100) NOT NULL,
+ `status` varchar(100) NOT NULL,
+ `datereceived` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+CREATE TABLE `student` (
+ `rollno` varchar(100) NOT NULL,
+ `fname` varchar(100) NOT NULL,
+ `lname` varchar(100) NOT NULL,
+ `usn` varchar(100) NOT NULL,
+ `email` varchar(100) NOT NULL,
+ `password` varchar(100) NOT NULL,
+ `cnic` varchar(100) NOT NULL,
+ `phone` varchar(100) NOT NULL,
+ `year` int(10) NOT NULL,
+ `discipline` varchar(100) NOT NULL,
+ `sem` varchar(100) NOT NULL,
+ PRIMARY KEY (`rollno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+CREATE TABLE `studentattend` (
+ `Date` date NOT NULL,
+ `Subject` varchar(100) NOT NULL,
+ `Attendence` varchar(100) NOT NULL,
+ `roll` int(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+CREATE TABLE `studenttimetable` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `class` varchar(12) NOT NULL,
+ `images` varchar(250) NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1
+
+CREATE TABLE `s_assignment` (
+ `id` int(100) NOT NULL,
+ `rollno` varchar(11) NOT NULL,
+ `file` varchar(255) NOT NULL,
+ `submit_date` date NOT NULL DEFAULT current_timestamp(),
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+CREATE TABLE `teacher` (
+ `scardno` varchar(100) NOT NULL,
+ `fname` varchar(100) NOT NULL,
+ `lname` varchar(100) NOT NULL,
+ `usn` varchar(100) NOT NULL,
+ `email` varchar(100) NOT NULL,
+ `cnic` varchar(100) NOT NULL,
+ `password` varchar(100) NOT NULL,
+ `phone` varchar(100) NOT NULL,
+ `category` varchar(100) NOT NULL,
+ PRIMARY KEY (`scardno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+CREATE TABLE `teacherattend` (
+ `Date` date NOT NULL,
+ `Attendence` varchar(100) NOT NULL,
+ `scardno` varchar(100) NOT NULL,
+ `fname` varchar(100) NOT NULL,
+ `lname` varchar(100) NOT NULL,
+ PRIMARY KEY (`Date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+
+
+CREATE TABLE `teachertimetable` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `teacher` varchar(12) NOT NULL,
+ `images` varchar(250) NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1
+
+
+CREATE TABLE `t_assignment` (
+ `id` int(100) NOT NULL,
+ `subject` varchar(100) NOT NULL,
+ `deadline` date NOT NULL,
+ `detail` varchar(200) NOT NULL,
+ `class` varchar(100) NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4

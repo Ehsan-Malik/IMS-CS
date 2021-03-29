@@ -1,0 +1,63 @@
+input[type=text]{
+    width: 250px;
+    padding: 8px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 1px solid #808080;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+   font-size:20px;
+}
+span{
+ font-size:22px;
+ color:blue;
+        font-weight:bold;
+}
+input[type=text]:focus {
+    border: 1px solid blue;
+}
+ 
+input[type=submit]{
+ background:black;
+ color:white;
+ padding:6px 8px;
+ font-weight:bold;
+ cursor:pointer;
+ border-radius:5px;
+}
+#userlist table td{
+   border: 1px solid blue;
+   text-align:left;
+}
+#userlist table th,td{
+ padding:8px;
+   
+}
+#userlist table{
+ border-collapse:collapse;
+ width:50%;
+}
+#userlist table td a{
+ background-color: #66acdb;
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+   
+}
+#userlist table th{
+ padding:15px;
+ background:rgb(92, 136, 218);
+ font-size:20px;
+ font-weight:bold;
+}
+#add{
+    text-decoration: none;
+    border: 2px solid;
+    background-color: #536ddc;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+}

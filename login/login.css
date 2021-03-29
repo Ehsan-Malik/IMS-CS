@@ -1,0 +1,239 @@
+
+.container {
+    top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+@media (min-width: 1200px)
+{
+.container {
+    max-width: 1140px;
+}
+
+}
+@media (min-width: 992px)
+{
+.container {
+    max-width: 960px;
+}
+}
+@media (min-width: 768px)
+{
+.container {
+    max-width: 720px;
+}
+}
+@media (min-width: 576px)
+{
+.container {
+    max-width: 540px;
+}
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#card {
+    height: 430px;
+    margin-top: 25%;
+    margin-bottom: 7%;
+    width: 400px;
+    color: black;
+    font-family: 'Bitter';
+    border-radius: 7px;
+    border: 1px solid purple;
+    box-shadow: inset -5px -5px 9px #35031e, inset 5px 5px 9px #35031e;
+    background-color: rgb(255 255 255);
+}
+.mcon {
+    height: fit-content;
+    border: none;
+    border-radius: none;
+    align-content: center;
+}
+
+.card{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+}
+#card-header {
+    background-color: rgb(255 255 255);
+    box-shadow: inset -5px 0px 9px #35031e, inset 5px 0px 9px #35031e;
+    border-bottom: 3px double purple;
+    text-shadow: 1px 1px 2px black;
+}
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+#card-footer {
+    background-color: rgb(255 255 255);
+    border-top: 3px double purple;
+    box-shadow: inset -5px 0px 9px #35031e, inset 5px 0px 9px #35031e;
+    text-shadow: 1px 1px 1px black;
+    font-size: 17px;
+    color: black;
+}
+    #navigation{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+}
+
+#search-btn{
+    color: aliceblue;
+    border-color: aliceblue;
+    float:right;
+
+}
+#contact{
+    color: aliceblue;
+}
+#about{
+    color: aliceblue;
+}
+#signin{
+    color: aliceblue;
+}
+   
+.login_btn {
+    color: white;
+    background-color: #5239aa;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Numans';
+    padding: 5px;
+    font-size: 18px;
+    width: 100px;
+}
+
+
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+  }
+  
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 880px) {
+  
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+  
+  }
+
+
+  /*End of  footer*/
+
+
+  input-group-prepend i{
+      margin-left: -30px;
+      cursor: pointer;
+  }

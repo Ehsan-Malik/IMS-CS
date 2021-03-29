@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--Search Box-->
+    <script type="text/javascript">
+        document.addEventListener( 'DOMContentLoaded',function(){
+         var searchpara=document.getElementById("paragraph").innerHTML;
+         searchpara=searchpara.toString();
+         document.getElementById("search_text").onkeyup =function ()
+         {highlight_word(searchpara)}; 
+        },false);
+         
+        function highlight_word(searchpara)
+        {
+         var text=document.getElementById("search_text").value;
+         if(text)
+         {
+          var pattern=new RegExp("("+text+")", "gi");
+          var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+          document.getElementById("paragraph").innerHTML=new_text;
+         }
+        }
+        </script>
+         <!--End Search Box-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ <!--Social Media Icons-->
+ <link rel="stylesheet" type="text/css"
+ href="https://cdn.rawgit.com/vaakash/socializer/80391a50/css/socializer.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!--CSS included By Developers-->
+    <!-- css files -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
+    <!-- //css files -->
+
+    
+    <title>IMS CS</title>
+   
+  
+    <link rel="icon" type="image/png" sizes="64x64" href="Images/logo.png">
+ 
+</head>
+
+<body>
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-dark" style="background-color: #5239aa; ">
+        <div class="container-fluid">
+            <img src="Images/logo.png" alt="" id="logo">
+            <a class="navbar-brand" href="http://localhost/IMS/">IMS CS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/IMS/" id="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/IMS/pages/contact.php" id="contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="http://localhost/IMS/pages/about.html" id="about">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="http://localhost/IMS/login/" id="signin">
+                            Sign In
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search_text">
+                    <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Slider-->
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/4.jpg" class="d-block w-100" style="height: 530px;" class="d-block w-100" alt="image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ex Vice Chancellor</h5>
+                    <p>Prof Dr Iftikhar Ahmad</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/2.jpg" class="d-block w-100" style="height: 530px;" class="d-block w-100" alt="image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Dr Muhammad Naheem</h5>
+                    <p>Chairman Computer Science Department</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/1.jpg" class="d-block w-100" style="height: 530px;" class="d-block w-100" alt="image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>CS Department Party</h5>
+                    <p>Welcome Party Conducted in 2018</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+
+    <!--End of Slider-->
+
+    <!--Details Abbottabad University-->
+
+
+
+
+    <h1 style="text-align: center; margin-top: 20px;">Abbottabad University</h1>
+
+    <p style="padding:50px;" id="paragraph">Abbottabad (abt-ah-baad) is the headquarters and biggest town of Hazara division in the
+        province of Khyber
+        Pakhtunkhwa. Abbottabad was founded as a British garrison town by Major James Abbott in 1850s. Its scenic
+        beauty, tall pines, shady chinars and surrounding hills leave a lasting impression on visitors. Situated on the
+        famous Karakorum Highway, Abbottabad is known as city of colleges of its quality education. Abbottabad has a
+        cool climate, and is surrounded by the country’s finest hill-stations Thandiani and Nathiagali.<br><br>
+
+        Havelian is an important Tehsil of District Abbottabad situated on Karakorum Highway. Hazara University, after
+        starting operations at Mansehra in 2002, established its second sub-campus at Havelian in 2008 on a vast area
+        (over 150 acres). The same very campus has been declared as Abbottabad University of Science and Technology
+        after being chartered by Khyber PakhtunKhwa Provincial Assembly in May 2015.</p>
+
+    <!--End of Details Abbottabad University-->
+  
+    <!--Buttons to Login-->
+    <div class="detail-btns">
+        <a class="btn btn-primary" href="http://localhost/IMS/pages/teachers.html" role="button" style="color: #fff;
+        background-color: #5239aa;">Teachers</a>
+
+        <a class="btn btn-primary" href="http://localhost/IMS/pages/hod.html" role="button"  style="color: #fff;
+        background-color:#5239aa;;
+        
+    ">Head of Department</a>
+        <a class="btn btn-primary" href="http://localhost/IMS/pages/itstaff.html" role="button"  style="color: #fff;
+        background-color: #5239aa;
+      
+    ">IT Services</a>
+        <br><br>
+        <a class="btn btn-danger" href="http://localhost/IMS/pages/gallery.html" role="button" style="color: #fff;
+        background-color: #5239aa;
+       
+    "> Visit the Gallery of Abbottabad University </a>
+
+
+
+    </div>
+    <br>
+    <div class="line">
+        <hr>
+    </div>
+    <br>
+    <div class="login-btns">
+
+        <a class="btn btn-danger" href="radio.html" role="button" style="color: #fff;
+        background-color: #5239aa;
+      
+    ">Register Your Self</a>
+        <a class="btn btn-success" href="http://localhost/IMS/login/" role="button" style="color: #fff;
+        background-color: #5239aa;
+      
+    ">Login</a>
+     
+
+    </div>
+
+    <br>
+    <br>
+    <div class="line">
+        <hr>
+    </div>
+    <!--End of Buttons to Login-->
+
+
+
+
+
+
+  
+
+
+
+  
+<h1 style="text-align: center;">Our Stats</h1>
+    <!--stats-->
+    <div class="stats" id="stats">
+        <div class="container">
+            <div class="stats-info">
+          
+                <div class="col-md-3 col-xs-3 stats-grid slideanim">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='10000'
+                        data-delay='.5' data-increment="1">100</div>
+
+                    <h4 class="stats-info">IT SERVICES STAFF</h4>
+                </div>
+                <div class="col-md-3 col-xs-3 stats-grid slideanim">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='79000'
+                        data-delay='.5' data-increment="10">790</div>
+
+                    <h4 class="stats-info">STUDENTS ENROLLED</h4>
+                </div>
+                <div class="col-md-3 col-xs-3 stats-grid slideanim">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='11000'
+                        data-delay='.5' data-increment="1">110</div>
+
+                    <h4 class="stats-info">CERTIFIED TEACHERS</h4>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--//stats-->
+
+
+
+
+    <h1 style="text-align: center;">VISIT AUST</h1>
+    <br>
+
+    <!--Google Maps-->
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="100%" height="395" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=1100&amp;height=395&amp;hl=en&amp;q=Abbottabad University of Science and Technology&amp;t=p&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                href="https://embedgooglemap.xyz/">embed google map</a></div>
+        <style>
+            .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 395px;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 400px;
+            }
+        </style>
+    </div>
+
+    <!--Footer -->
+
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3><img src="Images/logo.png" alt="" style="width: 50px; height: 50px;"></h3>
+
+            <p class="footer-links">
+                <a href="http://localhost/IMS/">Home</a>
+                ·
+                <a href="#">Blog</a>
+                ·
+                <a href="http://localhost/IMS/pages/about.html">About</a>
+                ·
+                <a href="http://localhost/IMS/pages/contact.php">Contact</a>
+            </p>
+            r
+            <p class="footer-company-name">Copyright &copy; 2020</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Capt Akash Rabani Shaheed Road </span> Havelian, KPK</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+92 555 123456</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p>imscs@aust.edu.pk</p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About AUST</span>
+                Abbottabad (abt-ah-baad) is the headquarters and biggest town of Hazara division in the
+                province of Khyber
+                Pakhtunkhwa.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://web.facebook.com/aust.edu.pk/?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a>
+                <a href="https://web.facebook.com/aust.edu.pk/?_rdc=1&_rdr"><i class="fa fa-twitter"></i></a>
+                <a href="https://web.facebook.com/aust.edu.pk/?_rdc=1&_rdr"><i class="fa fa-linkedin"></i></a>
+                <a href="https://web.facebook.com/aust.edu.pk/?_rdc=1&_rdr"><i class="fa fa-instagram"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- js-scripts -->			
+<!-- js-files -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+<!-- //js-files -->
+   
+ 
+
+
+
+<!-- //moving-top scrolling -->
+<script src="js/index.js"></script>
+
+
+
+<!-- js-files -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+<!-- //js-files -->
+</body>
+
+</html>

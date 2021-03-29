@@ -1,0 +1,595 @@
+/*Registration Styles.*/
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Bree+Serif|Patrick+Hand|Volkhov|Handlee|PT+Serif|Numans|Bitter|Odibee+Sans|Simonetta|Trade+Winds&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ background-color: rgb(255 255 255);
+
+}
+
+.mcontainer
+{
+    width:fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: auto;
+    display : flex;
+    padding: 10px;
+    box-shadow: -2px -2px 5px rgba(0,0,0,0.5),
+                3px 3px 6px rgba(0,0,0,0.5);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    text-align: left;
+    font-size: 23px;
+    font-family: 'Acme';
+    background-color: white;
+  
+}
+
+.myform{
+    margin-top: 1%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: fit-content;
+    font-size: 23px;
+    font-family: 'Acme';
+    color: black;
+    text-align: center;
+    margin-bottom: auto;
+    border-radius: 10px;
+    justify-content: center;
+    }
+
+label{
+    color: black;
+    margin: 1%; 
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: cambria;
+    margin-top: 35px;
+}
+
+
+.label.required{
+    position:relative;
+ }
+ 
+ .label.required:after{
+     content: '*';
+     margin-left: 4px;
+     font-family: 'Odibee';
+     color: #b90000;
+ }
+
+input[type=text] {
+    width: 100%;
+    margin: 1%;
+    height: 40px;  
+    text-align: center;
+    font-size: 20px; 
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left:none;
+    border-top:none;border-right:none;
+    padding-left: 5px;
+    background-color: transparent;
+    color: black;
+    outline: none;
+ }
+
+ input[type=date] {
+    width: 100%;
+    margin: 1%;
+    height: 40px;   
+    font-size: 20px; 
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left:none;
+    border-top:none;border-right:none;
+    padding-left: 5px;
+    color: black;
+    background-color: transparent;
+    outline:none;
+    text-align:center;
+ }
+  .radio1 {
+    width: 100%;
+    margin: 1%;
+    height: 40px;   
+    font-size: 20px; 
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left:none;
+    border-top:none;border-right:none;
+    padding-left: 5px;
+    color: black;
+    background-color: transparent;
+    outline:none;
+    text-align:center;
+  }
+
+  input[type=file] {
+    width: 100%;
+    margin: 1%;
+    height: 40px;   
+    font-size: 20px; 
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left:none;
+    border-top:none;
+    border-right:none;
+    padding-left: 5px;
+    color: black;
+    outline:none;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .select1 {
+    width: 100%;
+    margin: 1%;
+    height: 40px;   
+    font-size: 20px;    
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left:none;
+    border-top:none;border-right:none;
+    padding-left: 5px;
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+    color: black;
+  }
+ 
+  .select12 {
+    width: 100%;
+    margin: 1%;    
+    height: 40px;   
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left:none;
+    border-top:none;border-right:none;
+    padding-left: 5px;
+    color: black;
+    outline:none;
+    text-align:center;
+    background-color: transparent;
+  }
+
+
+  input[type=number] {
+    width: 100%;
+    margin: 1%;    
+    height: 40px;   
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left:none;
+    border-top:none;border-right:none;
+    padding-left: 5px;
+    color: black;
+    padding-left: 5px;
+    outline:none;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  input[type=email] {
+    width: 100%;
+    margin: 1%;    
+    height: 40px;   
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left:none;
+    border-top:none;border-right:none;
+    padding-left: 5px;
+    color: black;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+  }
+
+  input[type=phone] {
+    width: 100%;
+    margin: 1%;    
+    height: 40px;   
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left:none;
+    border-top:none;border-right:none;
+    padding-left: 5px;
+    color: black;
+    outline:none;
+    background-color:transparent;
+    text-align: center;
+  }
+
+  input[type=password] {
+    width: 100%;
+    margin: 1%;    
+    height: 40px;   
+    font-size: 20px;
+    font-family: 'Acme';
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-left:none;
+    border-top:none;border-right:none;  
+    padding-left: 5px;
+    color: black;
+    background-color: transparent;
+    text-align:center;
+    outline: none;
+  }
+  
+::placeholder{
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    color: rgb(97, 78, 182);
+}
+
+input[type=submit] {
+    width: 100%;
+    margin-top: 8%;    
+    margin-bottom: 4%;
+    font-family: 'Bree Serif';
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color:rgb(97, 78, 182);
+    padding-left: 5px;
+    height: 50px;   
+    font-size: 24px;
+    color: black;
+    border-radius: 5px;
+  }
+
+  input[type=reset] {
+    width: 60%;
+    text-align: center;
+    height: 50px;   
+    font-size: 24px;
+    margin-top: 4%;    
+    margin-bottom: 2%;
+    font-family: 'Bree Serif';
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: rgb(92, 94, 95);
+    padding-left: 5px;
+    color: black;
+    border-radius: 5px;
+  }
+
+  hr{
+    padding-left : 0px;
+    height: 120px;
+    border: none;;
+    background: black;
+    margin-bottom: 50px;
+
+}
+
+.tit{
+      
+
+      color: rgb(69 8 255);
+      font-family: Times New Roman;
+      text-shadow: 1px 1px 2px black;
+      padding: 50px;
+    
+}
+
+.login_btn {
+  color: black;
+  border: 2px solid;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Numans';
+  padding: 5px;
+  font-size: 18px;
+  width: 100px;
+  background-color: #6c66ff;
+}
+
+.login_btn:hover {
+  color: whitesmoke;
+  background-color: #6c66ff;
+  box-shadow: 10px 10px 10px black;
+}
+
+.reset_btn
+{
+  color: black;
+  border: 2px solid;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Numans';
+  padding: 5px;
+  font-size: 18px;
+  width: 100px;
+}
+
+.reset_btn:hover{
+  color: wheat;
+  background-color: darkslategray;
+  box-shadow: 10px 10px 10px black;
+}
+
+#progress{
+  background-color:#b1025f;
+  height: 8px;
+  width: 0;
+  border-bottom: 1px solid black;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b1025f; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #490228; 
+}
+
+
+/* Navigation*/
+
+#navigation{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+}
+
+#search-btn{
+    color: aliceblue;
+    border-color: aliceblue;
+
+}
+#contact{
+    color: aliceblue;
+}
+#about{
+    color: aliceblue;
+}
+#signin{
+    color: aliceblue;
+}
+.d-flex{
+  margin-left: 530px;
+
+}
+      /*Navigation*/
+
+
+      /* Footer*/
+
+  .footer-distributed{
+    background-color: #5239aa;;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+  
+    padding: 55px 50px;
+   
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+    width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+  }
+  
+  .footer-distributed h3 span{
+    color:  #5383d3;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+  }
+  
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 880px) {
+  
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+  
+  }
+
+*td{
+float:left;
+}
+
+  /*End of  footer*/
+
+
+
+  .myform table tbody tr{
+    height: 100px;
+  }

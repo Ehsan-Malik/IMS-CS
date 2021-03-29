@@ -1,0 +1,338 @@
+
+
+#navigation{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+}
+
+#search-btn{
+    color: aliceblue;
+    border-color: aliceblue;
+
+}
+#contact{
+    color: aliceblue;
+}
+#about{
+    color: aliceblue;
+}
+#signin{
+    color: aliceblue;
+}
+.detail-btns{
+  text-align: center;
+  padding: 10px;
+ 
+}
+.login-btns{
+  padding-top: 20px;
+  padding-left: 50px;
+
+}
+
+
+.line{
+  padding-right: 150px;
+  padding-left: 150px;
+}
+  /* Footer*/
+
+  .footer-distributed{
+    background-color: #5239aa;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+  
+    padding: 55px 50px;
+   
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+    width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+  }
+  
+  .footer-distributed h3 span{
+    color:  #5383d3;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+    width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+  }
+  
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 880px) {
+  
+    .footer-distributed{
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+    }
+  
+  }
+
+  /*End of  footer*/
+/*-- Stats Section --*/
+.stats {
+	background: url(../Images/stats.jpg) no-repeat 0px 0px;
+    padding: 100px 0;
+    background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+    background-attachment: fixed;
+}
+.stats-info {
+	text-align: center;
+}
+.stats h4 {
+    color: #fff;
+    font-size: 26px;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 600;
+    background: #ffb71c;
+    padding: .5em;
+    border-right: 5px solid #fff;
+    border-radius: 13px 0;
+}
+.stats-grid {
+	font-size: 60px;
+	font-weight: 400;
+	color: white;
+	margin-bottom: 10px;
+display:inline-block;
+margin-left: 60px;
+}
+h4.stats-info {
+	margin-top: 20px;
+}
+/*-- //Stats Section --*/
+ 
+/* Gallery*/
+ /* End Gallery*/
+
+
+
+.carousel{
+
+  margin-top: 100px;
+}
+#navigation{
+  top: 0;
+}
+#contact{
+border: 2px solid white;
+    color: aliceblue;
+    border-radius: 10px;
+    width: 97px;
+    margin: 0 auto;
+    text-align: center;
+}
+#about{
+  border: 2px solid white;
+      color: aliceblue;
+      border-radius: 10px;
+      width: 97px;
+      margin: 0 auto;
+      text-align: center;
+  }
+  #signin{
+    border: 2px solid white;
+        color: aliceblue;
+        border-radius: 10px;
+        width: 97px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+   
+      #home{
+        border: 2px solid white;
+            color: aliceblue;
+            border-radius: 10px;
+            width: 97px;
+            margin: 0 auto;
+            text-align: center;
+        }
+  
+  #home:hover{
+    background-color: white;
+    color: #5239aa;
+    border-color: aqua;
+
+  }
+  #signin:hover{
+    background-color: white;
+    color: #5239aa;
+    border-color: aqua;
+
+  }
+  #about:hover{
+    background-color: white;
+    color: #5239aa;
+    border-color: aqua;
+
+  }
+  #contact:hover{
+    background-color: white;
+    color: #5239aa;
+    border-color: aqua;
+
+  }
+.nav-item{
+  margin-left: 20px;
+}
+  
+.highlight
+{
+ color:red;
+ font-style:italic;
+ font-size:16px;
+ font-weight:bold;
+ text-transform:capitalize;
+ text-decoration:underline;
+}
